@@ -8,13 +8,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    static ArrayList<String> places = new ArrayList<>();
-    static ArrayList<LatLng> locations = new ArrayList<>();
-    static ArrayAdapter arrayAdapter;
+    protected static ArrayList<String> places = new ArrayList<>();
+    protected static ArrayList<LatLng> locations = new ArrayList<>();
+    protected static ArrayAdapter arrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
